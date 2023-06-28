@@ -5,6 +5,7 @@ public class Pessoa {
     public String rg;
     public String telefoneFamiliar;
     public String endereco;
+    public String assinarTermo;
 
     public void assinarTermo(){
         System.out.println("Pessoa assinou um termo de ciência dos riscos do passeio!");
