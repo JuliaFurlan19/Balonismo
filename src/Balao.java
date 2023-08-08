@@ -9,32 +9,32 @@ public class Balao {
     private int capacidade;
     private double valorBalao;
 
-    public void setId(int id){ this.id = id; }
-    public int getId(){ return this.id; }
+    public void setId(int id) { this.id = id; }
+    public int getId() { return this.id; }
 
-    public void setRegistroRegularidade(String registroRegularidade){ this.registroRegularidade = registroRegularidade; }
-    public String getRegistroRegularidade(){ return this.registroRegularidade; }
+    public void setRegistroRegularidade(String registroRegularidade) { this.registroRegularidade = registroRegularidade; }
+    public String getRegistroRegularidade() { return this.registroRegularidade; }
 
-    public void setCor(String cor){ this.cor = cor; }
-    public String getCor(){ return this.cor; }
+    public void setCor(String cor) { this.cor = cor; }
+    public String getCor() { return this.cor; }
 
-    public void setTipo(String tipo){ this.tipo = tipo; }
-    public String getTipo(){ return this.tipo; }
+    public void setTipo(String tipo) { this.tipo = tipo; }
+    public String getTipo() { return this.tipo; }
 
-    public void setAltura(double altura){ this.altura = altura; }
-    public double getAltura(){ return this.altura; }
+    public void setAltura(double altura) { this.altura = altura; }
+    public double getAltura() { return this.altura; }
 
-    public void setPeso(double peso){ this.peso = peso; }
-    public double getPeso(){ return this.peso; }
+    public void setPeso(double peso) { this.peso = peso; }
+    public double getPeso() { return this.peso; }
 
-    public void setCapacidade(int capacidade){ this.capacidade = capacidade; }
-    public int getCapacidade(){ return this.capacidade; }
+    public void setCapacidade(int capacidade) { this.capacidade = capacidade; }
+    public int getCapacidade() { return this.capacidade; }
 
-    public void setValorBalao(double valorBalao){ this.valorBalao = valorBalao; }
-    public double getValorBalao(){ return this.valorBalao; }
+    public void setValorBalao(double valorBalao) { this.valorBalao = valorBalao; }
+    public double getValorBalao() { return this.valorBalao; }
 
-    public String voar(Combustivel gasPropano){
-        return "voando com " + gasPropano;
+    public String voar(Combustivel combustivel){
+        return "balão voou" + combustivel;
     }
 
     // Construtor padrão
@@ -52,5 +52,15 @@ public class Balao {
         this.peso = peso;
         this.capacidade = capacidade;
         this.valorBalao = valorBalao;
+    }
+
+    // Construtor da minha escolha
+    Balao(int id) {
+        this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "número " + id;
     }
 }

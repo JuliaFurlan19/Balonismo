@@ -4,17 +4,17 @@ public class Piloto {
     private String cpfPiloto;
     private String registroANAC;
 
-    public void setNomePiloto(String nomePiloto){ this.nomePiloto = nomePiloto; }
-    public String getNomePiloto(){ return this.nomePiloto; }
+    public void setNomePiloto(String nomePiloto) { this.nomePiloto = nomePiloto; }
+    public String getNomePiloto() { return this.nomePiloto; }
 
-    public void setCpfPiloto(String cpfPiloto){ this.cpfPiloto = cpfPiloto; }
+    public void setCpfPiloto(String cpfPiloto) { this.cpfPiloto = cpfPiloto; }
     public String getCpfPiloto(){ return this.cpfPiloto; }
 
-    public void setRegistroANAC(String registroANAC){ this.cpfPiloto = registroANAC; }
-    public String getRegistroANAC(){ return this.registroANAC; }
+    public void setRegistroANAC(String registroANAC) { this.cpfPiloto = registroANAC; }
+    public String getRegistroANAC() { return this.registroANAC; }
 
-    public void pilotarBalao(){
-        System.out.println("Piloto vôou pilotando o balão!");
+    public String pilotarBalao(Balao balao){
+        return "Piloto pilotou o balão " + balao;
     }
 
     // Construtor padrão
@@ -28,4 +28,10 @@ public class Piloto {
         this.cpfPiloto = cpfPiloto;
         this.registroANAC = registroANAC;
     }
+
+    // Construtor da minha escolha
+    Piloto(String cpfPiloto) {
+        this.cpfPiloto = cpfPiloto;
+    }
+
 }
